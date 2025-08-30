@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #141414;
+    }
+    .navbar .logo {
+      color: #e50914;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .navbar button {
+      background-color: #e50914;
+      border: none;
+      color: white;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .hero {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?q=80&w=1600') center/cover no-repeat;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .hero input {
+      padding: 10px;
+      width: 300px;
+      border: none;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+    .hero button {
+      padding: 10px 20px;
+      background-color: #e50914;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .section {
+      padding: 20px;
+    }
+    .section h2 {
+      margin-bottom: 10px;
+    }
+    .movies {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+    }
+    .movies img {
+      width: 150px;
+      border-radius: 4px;
+    }
+    footer {
+      background-color: #141414;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">NETFLIX</div>
+    <button>Sign In</button>
+  </div>
+
+  <div class="hero">
+    <h1>Unlimited movies, TV shows and more.</h1>
+    <p>Watch anywhere. Cancel anytime.</p>
+    <div>
+      <input type="email" placeholder="Email address">
+      <button>Get Started</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Popular on Netflix</h2>
+    <div class="movies">
+      <img src="https://picsum.photos/200/300?random=1" alt="Movie 1">
+      <img src="https://picsum.photos/200/300?random=2" alt="Movie 2">
+      <img src="https://picsum.photos/200/300?random=3" alt="Movie 3">
+      <img src="https://picsum.photos/200/300?random=4" alt="Movie 4">
+      <img src="https://picsum.photos/200/300?random=5" alt="Movie 5">
+    </div>
+  </div>
+
+  <footer>
+    <p>Netflix Clone UI • For learning purposes only</p>
+  </footer>
+
+</body>
+</html>
+
